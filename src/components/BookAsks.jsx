@@ -22,7 +22,7 @@ class BookAsks extends Component {
                 return asksObj.map((key,i)=>{
                     total = total + asks[key].amount;
                     return (
-                        <Optional key={i} renderIf={!Number.isNaN(asks[key].amount) && !Number.isNaN(asks[key].cnt) && !Number.isNaN(asks[key].price)} component={()=>{
+                        <Optional key={i} renderIf={!isNaN(asks[key].amount)} component={()=>{
                            return <tr className="book-asks--row">   
                                 <td>{asks[key].price}</td>
                                 <td>{asks[key].amount + total}</td>
