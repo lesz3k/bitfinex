@@ -30,3 +30,24 @@
     transform: rotate(360deg);
   }
 }
+.book {
+  font-size:12px;
+  display: flex;
+}
+
+.book-asks {
+  background: #f4f4f4;
+}
+
+thead {
+  vertical-align: middle;
+  font-weight: bold;
+} 
+
+.buttons-list {
+  display: flex;
+}
+
+.buttons-list > button {
+  margin: 5px;
+}
